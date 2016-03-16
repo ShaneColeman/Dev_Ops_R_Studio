@@ -4,8 +4,8 @@ library("RUnit")
 
 source("Calculator.R")
 
-test.suite <- defineTestSuite("Add Test", dirs = file.path("Tests"),
-                              testFileRegexp = "^\\d+||.R")
+test.suite <- defineTestSuite("UnitTests", dirs = file.path("Tests"),
+                              testFileRegexp = "\\.R")
 
 test.result <- runTestSuite(test.suite)
 
